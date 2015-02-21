@@ -1,0 +1,16 @@
+---
+# kerl
+kerl_bin: /usr/local/bin/kerl
+
+# erlang
+erlang_download_dir: /tmp/kerl/archives
+erlang_build_dir: /tmp/kerl/builds
+erlang_install_dir: /usr/lib/kerl/installs
+
+# elixir
+elixir_build_dir: /tmp/elixir
+elixir_install_dir: /usr/local/bin
+
+# etc
+profile_dir: /etc/profile.d
+

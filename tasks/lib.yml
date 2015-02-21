@@ -1,0 +1,14 @@
+
+- name: install dependent packages
+  yum: name={{item}} state=present
+  with_items:
+    - git-core
+    - curl
+    - gcc
+    - glibc
+    - make
+    - autoconf
+    - libselinux-python
+    - ncurses-devel
+    - openssl-devel
+

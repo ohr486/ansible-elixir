@@ -1,0 +1,19 @@
+
+- name: get kerl
+  get_url: url={{kerl_bin_github_url}} dest={{kerl_bin}} mode=0777
+
+- name: put .kerlrc
+  template: src=kerlrc dest={{ansible_env['HOME']}}/.kerlrc owner={{ansible_env['USER']}} mode=0744
+
+- name: update erlang releases
+  command: "{{kerl_bin}} update releases creates={{ansible_env['HOME']}}/.kerl/otp_releases"
+
+- name: build erlang
+  command: "{{kerl_bin}} build {{erlang_version}} {{erlang_version}} creates={{erlang_build_dir}}/{{erlang_version}}"
+
+- name: install erlang
+  command: "{{kerl_bin}} install {{erlang_version}} {{erlang_install_dir}}/{{erlang_version}} creates={{erlang_install_dir}}/{{erlang_version}}"
+
+- name: put activate erlang file
+  template: src=kerl.sh dest={{profile_dir}}/kerl.sh
+

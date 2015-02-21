@@ -1,0 +1,10 @@
+---
+# install dependency libs
+- include: lib.yml
+
+# install erlang with kerl
+- include: erlang.yml
+
+# install elixir with github repo
+- include: elixir.yml
+

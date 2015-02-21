@@ -1,0 +1,3 @@
+KERL_DOWNLOAD_DIR={{erlang_download_dir}}
+KERL_BUILD_DIR={{erlang_build_dir}}
+

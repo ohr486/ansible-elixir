@@ -1,0 +1,10 @@
+
+- name: clone elixir repo
+  git: repo={{elixir_github_url}} dest={{elixir_build_dir}} version={{elixir_version}}
+
+- name: compile and install target version elixir
+  shell: 'source /etc/profile.d/kerl.sh && git checkout {{elixir_version}} && make && make install'
+  args:
+    chdir: "{{elixir_build_dir}}"
+    creates: "{{elixir_install_dir}}/elixir" # TODO: don't run when `elixir -v` equals {{elixir_version}}
+
