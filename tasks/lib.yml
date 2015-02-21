@@ -1,3 +1,4 @@
+---
 
 - name: install dependent packages
   yum: name={{item}} state=present

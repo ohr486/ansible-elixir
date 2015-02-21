@@ -1,3 +1,4 @@
+---
 
 - name: get kerl
   get_url: url={{kerl_bin_github_url}} dest={{kerl_bin}} mode=0777
