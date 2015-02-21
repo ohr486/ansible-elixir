@@ -8,6 +8,8 @@ Requirements
 
 Tested on Ansible 1.8.2 or higher.
 
+sudo to run.
+
 Role Variables
 --------------
 
