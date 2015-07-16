@@ -1,7 +1,7 @@
 ---
 
-- name: install dependent packages
-  yum: name={{item}} state=present
+- name: install dependent packages for red hat derivative distros
+  yum: name={{item}} state=present update_cache=yes
   with_items:
     - git-core
     - curl
@@ -12,4 +12,18 @@
     - libselinux-python
     - ncurses-devel
     - openssl-devel
+  when: ansible_os_family == 'RedHat'
 
+- name: install dependent packages for debian derivative distros
+  apt: name={{item}} state=present update_cache=yes
+  with_items:
+    - git-core
+    - curl
+    - gcc
+    - libc6
+    - make
+    - autoconf
+    - libncurses5-dev
+    - openssl
+    - libssl-dev
+  when: ansible_os_family == 'Debian'
