@@ -14,8 +14,8 @@ Role Variables
 --------------
 
 ```
-- elixir_version: elixir version (v1.0.3, v1.0.2, v1.0.1, v1.0.0)
-- erlang_version: erlang version (17.4, 17.3, ...)
+- elixir_version: elixir version (v1.0.5, v1.0.4, v1.0.3, v1.0.2, v1.0.1, v1.0.0)
+- erlang_version: erlang version (17.5, 17.4, 17.3, ...)
 ```
 
 Dependencies
@@ -30,7 +30,7 @@ Example Playbook
 - hosts: servers
   sudo: yes
   roles:
-     - { role: ohr486.ansible-elixir, erlang_version: 17.4, elixir_version: v1.0.3 }
+     - { role: ohr486.ansible-elixir, erlang_version: 17.5, elixir_version: v1.0.5 }
 ```
 
 License
