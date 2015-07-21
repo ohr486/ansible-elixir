@@ -8,4 +8,4 @@
   args:
     chdir: "{{elixir_build_dir}}"
     creates: "{{elixir_install_dir}}/elixir"
-
+    executable: /bin/bash
