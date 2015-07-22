@@ -55,7 +55,7 @@ galaxy_info:
   #  - 9.1
   #  - 9.2
   - name: Ubuntu
-   versions:
+    versions:
   #  - all
   #  - lucid:10.04
   #  - maverick:10.10
@@ -65,9 +65,9 @@ galaxy_info:
   #  - quantal:12.10
   #  - raring:13.04
   #  - saucy:13.10
-   - trusty:14.04
-   - vivid:15.04
-   - wily:15.10
+    - trusty: 14.04
+    - vivid: 15.04
+    - wily: 15.10
   #- name: SLES
   #  versions:
   #  - all
