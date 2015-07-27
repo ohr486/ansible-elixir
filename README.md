@@ -30,7 +30,7 @@ Example Playbook
 - hosts: servers
   sudo: yes
   roles:
-     - { role: ohr486.ansible-elixir, erlang_version: 17.5, elixir_version: v1.0.5 }
+     - { role: ohr486.elixir, erlang_version: 17.5, elixir_version: v1.0.5 }
 ```
 
 License
