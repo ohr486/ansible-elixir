@@ -14,8 +14,8 @@ Role Variables
 --------------
 
 ```
-- elixir_version: elixir version (v1.0.5, v1.0.4, v1.0.3, v1.0.2, v1.0.1, v1.0.0)
-- erlang_version: erlang version (17.5, 17.4, 17.3, ...)
+- elixir_version: elixir version (v1.1.1, v1.1.0, v1.0.5, ...)
+- erlang_version: erlang version (18.1, 18.0, 17.5, ...)
 ```
 
 Dependencies
@@ -30,7 +30,7 @@ Example Playbook
 - hosts: servers
   sudo: yes
   roles:
-     - { role: ohr486.elixir, erlang_version: 17.5, elixir_version: v1.0.5, erl_configure_options: '--enable-hipe --enable-smp-support' }
+     - { role: ohr486.elixir, erlang_version: 18.1, elixir_version: v1.1.1, erl_configure_options: '--enable-hipe --enable-smp-support' }
 ```
 
 License
