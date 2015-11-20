@@ -1,7 +1,7 @@
 ---
 
 - name: install dependent packages for red hat derivative distros
-  yum: name={{item}} state=present update_cache=yes
+  yum: name={{item}} state=present
   with_items:
     - git-core
     - curl
