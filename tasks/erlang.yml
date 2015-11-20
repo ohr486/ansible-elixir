@@ -6,6 +6,12 @@
 - name: put .kerlrc
   template: src=kerlrc dest={{ansible_env['HOME']}}/.kerlrc owner={{ansible_env['USER']}} mode=0744
 
+- name: remove otp_builds for kerl cleanup command
+  file: path={{ansible_env['HOME']}}/.kerl/otp_builds state=absent
+
+- name: remove otp_installations for kerl cleanup command
+  file: path={{ansible_env['HOME']}}/.kerl/otp_installations state=absent
+
 - name: update erlang releases
   command: "{{kerl_bin}} update releases"
 
