@@ -3,6 +3,10 @@
 erlang_version: 18.1
 elixir_version: v1.1.1
 
+# erlang/otp configure options
+erl_configure_options: ''
+
 # github url
 kerl_bin_github_url: http://github.com/yrashk/kerl/raw/master/kerl
 elixir_github_url: https://github.com/elixir-lang/elixir.git
+
