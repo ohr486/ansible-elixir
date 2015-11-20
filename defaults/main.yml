@@ -1,7 +1,7 @@
 ---
 # version
-erlang_version: 17.5
-elixir_version: v1.0.5
+erlang_version: 18.1
+elixir_version: v1.1.1
 
 # github url
 kerl_bin_github_url: http://github.com/yrashk/kerl/raw/master/kerl
