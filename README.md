@@ -30,7 +30,7 @@ Example Playbook
 - hosts: servers
   sudo: yes
   roles:
-     - { role: ohr486.elixir, erlang_version: 17.5, elixir_version: v1.0.5 }
+     - { role: ohr486.elixir, erlang_version: 17.5, elixir_version: v1.0.5, erl_configure_options: '--enable-hipe --enable-smp-support' }
 ```
 
 License
