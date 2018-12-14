@@ -3,7 +3,7 @@ galaxy_info:
   author: ohr486
   description: install elixir
   license: MIT
-  min_ansible_version: 1.4
+  min_ansible_version: 2.3
   platforms:
   - name: EL
     versions:
